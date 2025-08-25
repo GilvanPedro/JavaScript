@@ -1,12 +1,13 @@
 const A = [
-    [1, 2, 3],
-    [4, 5, 6]
+    [0, 1, 0],
+    [1, 0, 1],
+    [0, 1, 0]
 ];
 
 const B = [
-    [7, 8],
-    [9, 10],
-    [11, 12]
+    [0, 1, 0],
+    [1, 0, 1],
+    [0, 1, 0]
 ];
 
 function podeMultiplicar(A, B) {
@@ -38,5 +39,5 @@ const resultado = multiplicarMatriz(A, B);
 
 console.log("Resultado da Multiplicação:");
 resultado.forEach(linha => {
-    console.log('| ' + linha.join('\t') + ' |');
+    console.log('| ' + linha.join(' \t ') + ' |');
 });
