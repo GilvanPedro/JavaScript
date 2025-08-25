@@ -1,0 +1,18 @@
+.altura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.btn{
+    font-size: 40px;
+}
+
+.btn:hover{
+    scale: 1.1;
+    transition: ease-in-out, 0.4s;
+    cursor: pointer;
+}
