@@ -1,13 +1,11 @@
 const A = [
-    [0, 1, 0],
-    [1, 0, 1],
-    [0, 1, 0]
+    [2, 3],
+    [4, 5]
 ];
 
 const B = [
-    [0, 1, 0],
-    [1, 0, 1],
-    [0, 1, 0]
+    [1, 4],
+    [2, 1]
 ];
 
 function podeMultiplicar(A, B) {
@@ -31,13 +29,18 @@ function multiplicarMatriz(A, B) {
             resultado[i][j] = soma;
         }
     }
-
     return resultado;
 }
 
 const resultado = multiplicarMatriz(A, B);
+const resultado2 = multiplicarMatriz(B, A);
 
-console.log("Resultado da Multiplicação:");
+console.log("Multiplicação A x B:");
 resultado.forEach(linha => {
-    console.log('| ' + linha.join(' \t ') + ' |');
+    console.log('| ' + linha.join('\t') + ' |');
+});
+
+console.log("\n Multiplicação B x A:");
+resultado2.forEach(linha => {
+    console.log('| ' + linha.join('\t') + ' |');
 });
